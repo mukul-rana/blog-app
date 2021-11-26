@@ -29,9 +29,6 @@ def create_app(test_config=None):
     def hello():
         return 'Hello, World!<h1>Chaabi Nhi labni</h1>'
 
-    @app.route('/auth/register')
-    def register():
-        return 'Hanji fir'
 
     from . import db
     db.init_app(app)
